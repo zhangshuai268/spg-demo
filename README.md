@@ -148,4 +148,6 @@ api_wx
 $ git remote -v
 ````
 
-5.之后会继续补充
+5.gitlab推送代码出现错误
+
+>仓库若是通过github clone则默认分支为main，gitlab默认分支为master分支
