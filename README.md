@@ -140,4 +140,12 @@ api_wx
 
 >可能原因未设置编译器启动go.mod, goland调整方法File->Settings->Go->Go modules->勾中Enable Go modules integration即可
 
-4.之后会继续补充
+4.仓库地址
+
+>目录创建成功后，可执行下面的命令查看是否已修改远程仓库地址
+
+````
+$ git remote -v
+````
+
+5.之后会继续补充
