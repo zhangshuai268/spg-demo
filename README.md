@@ -122,6 +122,10 @@ api_wx
 * /config_update.exe: 开发过程中若配置文件有修改，可在命令行执行./config_update.exe -g 同步config.go
 * /config.json: 配置文件
 
+## 项目示例
+
+>
+
 ## 其他
 
 1.通过系统变量，选择不同的配置文件
@@ -135,3 +139,5 @@ api_wx
 3.go.mod文件报错
 
 >可能原因未设置编译器启动go.mod, goland调整方法File->Settings->Go->Go modules->勾中Enable Go modules integration即可
+
+4.之后会继续补充
