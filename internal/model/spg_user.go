@@ -1,7 +1,9 @@
-package models
+package model
+
+import "github.com/zhangshuai268/spg-go-pkg/pkg/myTime"
 
 type SpgUser struct {
-	Id         int           `json:"id" xorm:"not null pk INT(11)"`
+	Id         int           `json:"id" xorm:"not null pk autoincr INT(11)"`
 	Avatar     string        `json:"avatar" xorm:"not null comment('头像') VARCHAR(100)"`
 	Title      string        `json:"title" xorm:"not null comment('用户名') VARCHAR(100)"`
 	Mobile     string        `json:"mobile" xorm:"not null comment('手机号') VARCHAR(100)"`

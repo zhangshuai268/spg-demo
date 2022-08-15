@@ -1,7 +1,7 @@
 package main
 
 import (
-	logger "github.com/zhangshuai268/spg-go-pkg/pkg/log"
+	"github.com/zhangshuai268/spg-go-pkg/pkg/logger"
 	"spg-demo/internal/api/spg_admin"
 	"spg-demo/internal/api/store"
 	"spg-demo/internal/config"

@@ -1,11 +1,11 @@
-package models
+package model
 
 import (
 	"github.com/zhangshuai268/spg-go-pkg/pkg/myTime"
 )
 
 type SpgBook struct {
-	Id         int           `json:"id" xorm:"not null pk INT(11)"`
+	Id         int           `json:"id" xorm:"not null pk autoincr INT(11)"`
 	Title      string        `json:"title" xorm:"not null comment('书记名称') VARCHAR(100)"`
 	Image      string        `json:"image" xorm:"not null comment('书封面') VARCHAR(500)"`
 	Writer     string        `json:"writer" xorm:"not null comment('作者') VARCHAR(100)"`

@@ -1,9 +1,9 @@
-package models
+package model
 
 import "github.com/zhangshuai268/spg-go-pkg/pkg/myTime"
 
 type SpgOrder struct {
-	Id           int           `json:"id" xorm:"not null pk INT(11)"`
+	Id           int           `json:"id" xorm:"not null pk autoincr INT(11)"`
 	UserId       int           `json:"user_id" xorm:"not null INT(11)"`
 	OrderNo      string        `json:"order_no" xorm:"not null comment('自定义订单号') VARCHAR(100)"`
 	OrderTradeNo string        `json:"order_trade_no" xorm:"not null comment('微信或支付宝订单号') VARCHAR(100)"`

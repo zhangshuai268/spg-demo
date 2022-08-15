@@ -1,11 +1,11 @@
-package models
+package model
 
 import (
 	"github.com/zhangshuai268/spg-go-pkg/pkg/myTime"
 )
 
 type SpgBookDetail struct {
-	Id         int           `json:"id" xorm:"not null pk INT(11)"`
+	Id         int           `json:"id" xorm:"not null pk autoincr INT(11)"`
 	BookId     int           `json:"book_id" xorm:"not null INT(11)"`
 	BookNo     string        `json:"book_no" xorm:"not null comment('图书编号') VARCHAR(100)"`
 	IsBorrow   int           `json:"is_borrow" xorm:"not null comment('借出状态 1借出 2未借出') TINYINT(4)"`

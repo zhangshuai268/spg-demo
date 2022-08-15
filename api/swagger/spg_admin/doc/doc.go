@@ -18,3 +18,15 @@
 //   name: Authorization
 // swagger:meta
 package docs
+
+//swagger:response errorResp
+type errorResp struct {
+	// in: body
+	Body struct {
+		//default: 0
+		Status int `json:"status"`
+		//default: error
+		Message string `json:"message"`
+		Data    string `json:"data"`
+	}
+}

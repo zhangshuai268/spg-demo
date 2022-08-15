@@ -5,10 +5,15 @@ import (
 )
 
 type Service interface {
+	Admin() AdminService
 }
 
 type service struct {
 	factory store.Factory
+}
+
+func (s *service) Admin() AdminService {
+	return NewAdminService(s)
 }
 
 func NewService(factory store.Factory) Service {
