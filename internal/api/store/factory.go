@@ -5,6 +5,7 @@ var client Factory
 type Factory interface {
 	Admin() AdminStore
 	Code() CodeStore
+	User() UserStore
 }
 
 func Client() Factory {

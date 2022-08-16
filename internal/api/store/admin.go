@@ -35,7 +35,7 @@ func (a *admins) Get(ctx context.Context, admin *model.SpgAdmin) (*model.SpgAdmi
 }
 
 func (a *admins) Update(ctx context.Context, admin *model.SpgAdmin) (int, error) {
-	_, err := a.xorm.Orm.Update(admin)
+	_, err := a.xorm.Orm.Id(admin.Id).Update(admin)
 	if err != nil {
 		return 0, err
 	}

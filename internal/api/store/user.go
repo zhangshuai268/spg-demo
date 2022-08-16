@@ -35,7 +35,7 @@ func (u *users) Get(ctx context.Context, user *model.SpgUser) (*model.SpgUser, b
 }
 
 func (u *users) Update(ctx context.Context, user *model.SpgUser) (int, error) {
-	_, err := u.xorm.Orm.Update(user)
+	_, err := u.xorm.Orm.Id(user.Id).Update(user)
 	if err != nil {
 		return 0, err
 	}

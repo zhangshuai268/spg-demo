@@ -15,6 +15,10 @@ type datastore struct {
 	gorm  *gorm.Engine
 }
 
+func (d *datastore) User() UserStore {
+	return NewUserStore(d)
+}
+
 func (d *datastore) Code() CodeStore {
 	return NewCodeStore(d)
 }
