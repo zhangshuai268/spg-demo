@@ -55,7 +55,7 @@ func (b *bookStore) Find(ctx context.Context, book map[string]interface{}) ([]*m
 func (b *bookStore) Update(ctx context.Context, book *model.SpgBook) (int, error) {
 	_, err := b.xorm.Orm.Id(book.Id).Update(book)
 	if err != nil {
-		return nil, err
+		return 0, err
 	}
 	return book.Id, nil
 }
